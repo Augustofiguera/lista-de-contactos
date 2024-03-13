@@ -1,0 +1,208 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	/* 1 */
+	border-width: 0;
+	/* 2 */
+	border-style: solid;
+	/* 2 */
+	border-color: #e5e7eb;
+	/* 2 */
+}
+
+input:focus {
+	outline: none;
+}
+
+.info {
+	display: none;
+}
+
+.edit-btn {
+	width: 2rem;
+	height: 2rem;
+}
+
+.delete-btn {
+	width: 2rem;
+	height: 2rem;
+}
+
+.border-edit {
+	outline: 2px solid white;
+}
+
+.border-edit:focus {
+	outline: 2px solid white;
+}
+
+.correct {
+	border: 2px solid green;
+}
+
+.incorrect {
+	border: 2px solid red;
+}
+
+.error {
+	border-color: #ff0000;
+}
+.todo {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+html {
+	background-image: url(./fondo2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	max-width: 100vh;
+}
+
+
+
+#title {
+	font-size: 27px;
+	margin-bottom: 20px;
+}
+
+#form {
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-input-container {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.form-input-container label {
+	font-weight: bold;
+	display: block;
+}
+
+.form-input-container input[type="text"] {
+	width: 70%;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.info {
+	font-size: 14px;
+	color: rgb(252, 248, 248);
+}
+
+#form-btn {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#form-btn:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+#list {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	max-width: 700px;
+	margin-top: 20px;
+	overflow-y: auto;
+	max-height: 200px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#list li {
+	background-color: rgb(13, 20, 32);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color: #ccc;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.delete-btn,
+.edit-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.delete-btn svg,
+.edit-btn svg {
+	width: 24px;
+	height: 24px;
+	
+}
+
+.delete-btn svg path,
+.edit-btn svg path {
+	stroke: #ff0000;
+}
+
+.edit-btn svg path {
+	stroke: #007bff;
+	max-width: 10%;
+}
+
+.delete-btn:hover svg path,
+.edit-btn:hover svg path {
+	stroke-opacity: 0.8;
+}
+
+.delete-btn:focus svg,
+.edit-btn:focus svg {
+	outline: none;
+}
+
+.texto1 {
+	max-width: 41%;
+}
+
+.texto2 {
+	max-width: 41%;
+}
+
+
+
+
+
